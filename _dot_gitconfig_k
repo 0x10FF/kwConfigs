@@ -1,0 +1,48 @@
+[http]
+	sslverify = false
+	postbuffer = 524288000
+[color]
+	ui = auto
+	diff = auto
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+	hideDotFiles = dotGitOnly
+	autocrlf = false
+	eol = lf
+	; Emacs over Vim
+	; editor = vi
+	editor = emacs
+[apply]
+	whitespace = fix
+[alias]
+	s = status
+	c = commit
+	co = checkout
+        lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+        lga = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative --all
+        lgh = log --graph --pretty=format:'%Cred%H%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	; Git Shortcuts
+	; cpnx = cherry-pick --no-commit -x
+	rhh = reset --hard HEAD
+	pr = pull --rebase
+	rc = rebase --continue
+	fl = checkout -- *launch
+[merge]
+	tool = kdiff3
+[mergetool "kdiff3"]
+        keepBackup = false
+	trustExitCode = false
+	path = /usr/local/bin/kdiff3
+[guitool "git stash pop"]
+	cmd = git stash pop
+[guitool "git stash"]
+	cmd = git stash
+[guitool "git svn rebase"]
+	cmd = git svn rebase
+[push]
+	default = simple
