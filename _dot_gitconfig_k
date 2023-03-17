@@ -14,9 +14,7 @@
 	hideDotFiles = dotGitOnly
 	autocrlf = false
 	eol = lf
-	; Emacs over Vim
-	; editor = vi
-	editor = emacs
+	editor = vi
 [apply]
 	whitespace = fix
 [alias]
