@@ -1,4 +1,4 @@
-#!/bin/bash
-# the pbcopy script
+#!/usr/bin/env bash
+# the pbcopy script from https://lloydrochester.com/post/unix/wsl-pbcopy-pbpaste/
 tee <&0 | clip.exe
 exit 0
