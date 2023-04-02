@@ -1,5 +1,5 @@
 # Purpose
-Under WSL2, some software does not have convinient launchers you can pin to start. This guide is to quickly create a shortcut or generate a .desktop descriptor file on Linux distribution that will show in your Windows start menu (to pin)
+Under WSL2, some software does not have convenient launchers you can pin to start. This guide is to quickly create a shortcut or generate a .desktop descriptor file on Linux distribution that will show in your Windows start menu (to pin)
 
 # Commands
 
@@ -19,7 +19,7 @@ If all worked out and IntelliJ loaded, time to copy & paste into shortcut Window
 
 ### Gen .desktop file
 
-### Chmod it to expose for Windows iwatch
+### Chmod it to expose it to Windows with iwatch
 Original article [here](https://github.com/microsoft/wslg/issues/45)
 
 ```shell
