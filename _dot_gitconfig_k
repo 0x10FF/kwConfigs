@@ -44,3 +44,6 @@
 	cmd = git svn rebase
 [push]
 	default = simple
+[user]
+	name = 0x10FF
+	email = 0x10FF@gmail.com
